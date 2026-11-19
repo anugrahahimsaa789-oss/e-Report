@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="src/output.css">
-        <!-- <link rel="stylesheet" href="style.css"> -->
-    </head>
-    <body>
-        <div class="border border-black-600 rounded-2xl w-[250px] h-92 m-100 pt-4 flex flex-col justify-start items-center gap-4 shadow-2xl">
-            <div class="bg-blue-500 w-20 h-20 rounded-[100%]"></div>
-            <div class="font-bold">Anugrah</div>
-            <div class="pt-4">X-RPL A</div>
-            <div class="pt-10">
-                <button class="bg-blue-500 rounded-3xl h-10 w-30 ">
-                tekan ini bang
-            </button>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Report</title>
+    <link rel="icon" type="image/x-icon" href="image/Ellipse 4.png" />
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-slate-50 text-slate-800 antialiased min-h-screen pb-20 relative"
+  >
+    <nav
+      class="max-w-6xl mx-auto mt-6 mb-8 px-6 py-4 bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl shadow-sm flex items-center justify-center"
+    >
+      <div class="flex items-center gap-3 group cursor-pointer select-none">
+        <div
+          class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-black text-lg shadow-sm transition-all duration-300 ease-out group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-blue-500/40 group-active:scale-95"
+        >
+          E
         </div>
-    </body>
+        <span
+          class="text-xl font-black tracking-tight text-blue-950 transition-colors duration-300 group-hover:text-blue-600"
+          >e-Report</span
+        >
+      </div>
+    </nav>
+
+    <header
+      class="relative max-w-4xl mx-auto mb-16 px-4 text-center flex flex-col items-center justify-center"
+    >
+      <div
+        class="group inline-flex items-center gap-2.5 px-4 py-1.5 bg-blue-50/80 hover:bg-blue-100/80 border border-blue-200/80 rounded-full mb-6 shadow-sm hover:shadow-md hover:shadow-blue-500/10 transition-all duration-300 cursor-default select-none"
+      >
+        <span class="relative flex h-2.5 w-2.5">
+          <span
+            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"
+          ></span>
+          <span
+            class="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-600"
+          ></span>
+        </span>
+        <span
+          class="text-xs font-bold text-blue-600 group-hover:text-blue-700 uppercase tracking-widest transition-colors duration-300"
+          style="font-family: sans-serif"
+        >
+          LIVE REPORTING FEED
+        </span>
+      </div>
+
+      <h1
+        class="text-3xl md:text-5xl font-black text-blue-950 mb-4 tracking-tight leading-none uppercase"
+      >
+        SISTEM INFORMASI BERITA TEKNOLOGI
+      </h1>
+
+      <p class="text-sm md:text-base text-slate-500 leading-relaxed max-w-2xl">
+        Platform intelijen data yang memantau, mengompilasi, dan merangkum
+        pergerakan ekosistem teknologi global secara real-time. Dilengkapi
+        dengan filter pencarian prediktif super cepat.
+      </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 relative z-10">
+      <div
+        id="report-grid"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      ></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

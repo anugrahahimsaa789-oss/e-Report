@@ -68,17 +68,18 @@ const createSearchFilter = () => {
       Array.from(cards).forEach((card) => {
         const title = card.querySelector("h3")?.textContent.toLowerCase() || "";
         const desc = card.querySelector("p")?.textContent.toLowerCase() || "";
-        const source = card.querySelector("span")?.textContent.toLowerCase() || "";
+        const source =
+          card.querySelector("span")?.textContent.toLowerCase() || "";
 
         if (
           title.includes(keyword) ||
           desc.includes(keyword) ||
           source.includes(keyword)
         ) {
-          card.style.setProperty('display', 'flex', 'important');
+          card.style.setProperty("display", "flex", "important");
           card.style.opacity = "1";
         } else {
-          card.style.setProperty('display', 'none', 'important');
+          card.style.setProperty("display", "none", "important");
         }
       });
     });
